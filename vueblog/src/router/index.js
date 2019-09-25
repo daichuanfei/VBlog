@@ -8,6 +8,8 @@ import DataCharts from '@/components/DataCharts'
 import PostArticle from '@/components/PostArticle'
 import UserMana from '@/components/UserMana'
 import BlogDetail from '@/components/BlogDetail'
+import IviewTest from '@/components/IviewTest'
+import SideMenu from '@/components/side-menu/SideMenu'
 
 Vue.use(Router)
 
@@ -18,9 +20,15 @@ export default new Router({
       name: '登录',
       hidden: true,
       component: Login
-    }, {
+    },
+    {
+      path:'/test',
+      name:'test',
+      component:SideMenu
+    },
+    {
       path: '/home',
-      name: '',
+      name: 'test',
       component: Home,
       hidden: true
     }, {
